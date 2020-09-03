@@ -18,9 +18,9 @@
                 <strong>LO</strong>
             </div>
             <nav>
-                <a href="#" class="link">ABOUT</a>
-                <a href="#" class="link">ARTICELS</a>
-                <a href="#" class="last-link">SUBSCRIBE</a>
+                <a href="#about" class="link">ABOUT</a>
+                <a href="#articles" class="link">ARTICELS</a>
+                <a href="#subscribe" class="last-link">SUBSCRIBE</a>
             </nav>
         </div>
         <div class="header-bottom">
@@ -30,16 +30,12 @@
                 <span>HOLISTIC HEALTH</span>
             </div>
             <div class="border-1"></div>
-
-
-
-
         </div>
     </header>
 
     <main class="container">
 
-        <section class="articles-section" class="container">
+        <section id="articles" class="articles-section" class="container">
             <div class="articles-main-section" class="container">
 
                 <div class="articles-first-section" class="container">
@@ -63,9 +59,7 @@
                         <div class="container">
                             <div class="border-3"></div>
                             <div class="card-text-holder">
-                                <span>
-                                    How to use mindfullnes in your everyday life
-                                </span>
+                                <a href="#articles"> How to use mindfullnes in your everyday life</a>
                             </div>
                         </div>
                     </div>
@@ -78,9 +72,9 @@
                         <div class="container">
                             <div class="border-3"></div>
                             <div class="card-text-holder">
-                                <span>
+                                <a href="#articles">
                                     What are the best walking meditations
-                                </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -93,53 +87,76 @@
                         <div class="container">
                             <div class="border-3"></div>
                             <div class="card-text-holder">
-                                <span>
+                                <a href="#articles">
                                     How to go deep into mind of hope
-                                </span>
+                                </a>
                             </div>
                         </div>
                     </div>
-
                 </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div id="about-left-holder">
+                <img src="./images/about.jpg" alt="about-image">
+            </div>
+
+            <div class="about-right-holder">
+                <div class="container">
+                    <div>
+                        <span>
+                            ABOUT
+                        </span>
+                    </div>
+                    <div class="border-2"></div>
+                    <div class="about-text-holder">
+                        <p>
+                            Since 1993 we have romaded is a blog from the earlest years. Lorem ipsum uis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis lorem ipsum nulla facilisis lorem ipsum nulla
+                            facilisis lorem ipsum nulla facilisis lorem ipsum nulla facilisis lorem ipsum nulla facilisis lorem nulla facilias dolore eu fugiat.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <div class="subscribe-form">
+                <form action="index.html" class="" method="">
+                    <h1>SUBSCRIBE</h1>
+                    <h4>Sign-up to our newsletter</h4>
+                    <input type="email" placeholder="Your email" class="emailButton">
+                    <input type="submit" value="SUBMIT" class="submitButton">
+                </form>
 
             </div>
 
-
         </section>
-
-        <section class="about-section" class="container">
-            ABOUT
-        </section>
-        <section class="subscribe-section" class="container">
-            SUBSCRIBE
-        </section>
-
-
     </main>
 
     <footer>
         <div class="footer-inner">
-            <div class="left-footer">
-                <div class="left-footer-inner">
-                    <div>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <div>
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                    <div>
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
-                    <div>
-                        <i class="fab fa-pinterest-p"></i>
-                    </div>
+            <div class="left-footer-inner">
+                <div>
+                    <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer" class="fab fa-instagram"></a>
+                </div>
+                <div>
+                    <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer" class="fab fa-twitter"></a>
+                </div>
+                <div>
+                    <a href="http://www.facebbook.com" target="_blank" rel="noopener noreferrer" class="fab fa-facebook-f"></a>
+                </div>
+                <div>
+                    <a href="http://www.pinterest.com" target="_blank" rel="noopener noreferrer" class="fab fa-pinterest-p"></a>
                 </div>
             </div>
+
             <div class="right-footer-inner">
                 <nav>
-                    <a href="#" class="link">ABOUT</a>
-                    <a href="#" class="link">ARTICELS</a>
-                    <a href="#" id="footer-last-link" class="last-link">SUBSCRIBE</a>
+                    <a href="#about" class="link">ABOUT</a>
+                    <a href="#articles" class="link">ARTICELS</a>
+                    <a href="#subscribe" id="footer-last-link" class="last-link">SUBSCRIBE</a>
                 </nav>
             </div>
         </div>
