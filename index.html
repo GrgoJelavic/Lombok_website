@@ -9,10 +9,21 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
     <link rel="stylesheet" href="./style.css">
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
     <header>
+        <div class="toggle-sidebar">
+            <button class="fas fa-bars" onclick="onSidebarToggle()"></button>
+        </div>
+
+        <nav id="sidebar-container" class="sidebar">
+            <a href="#about" class="link">ABOUT</a>
+            <a href="#articles" class="link">ARTICELS</a>
+            <a href="#subscribe" class="link">SUBSCRIBE</a>
+        </nav>
+
         <div class="header-top">
             <div class="logo">
                 <strong>LO</strong>
@@ -157,11 +168,12 @@
                 <nav>
                     <a href="#about" class="link">ABOUT</a>
                     <a href="#articles" class="link">ARTICELS</a>
-                    <a href="#subscribe" id="footer-last-link" class="last-link">SUBSCRIBE</a>
+                    <a href="#subscribe" class="link">SUBSCRIBE</a>
                 </nav>
             </div>
         </div>
     </footer>
 </body>
+
 
 </html>
