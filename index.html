@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lombok website</title>
     <script src="https://kit.fontawesome.com/b8a224eecd.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
     <link rel="stylesheet" href="./style.css">
     <script defer src="js/index.js"></script>
@@ -14,7 +13,7 @@
 
 <body>
     <header>
-        <div class="toggle-sidebar">
+        <div id="toggle-container" class="toggle-sidebar" class="toggle-background">
             <button class="fas fa-bars" onclick="onSidebarToggle()"></button>
         </div>
 
@@ -34,7 +33,7 @@
                 <a href="#subscribe" class="last-link">SUBSCRIBE</a>
             </nav>
         </div>
-        <div class="header-bottom">
+        <div id="title-container" class="header-bottom" class="remove-title">
 
             <div class="header-bottom-inner">
                 <h1>LOMBOK</h1>
@@ -110,7 +109,6 @@
 
         <section id="about">
             <div class="about-left-holder">
-                <img src="./images/about.jpg" alt="about-image">
             </div>
 
             <div class="about-right-holder">
@@ -168,7 +166,7 @@
                 <nav>
                     <a href="#about" class="link">ABOUT</a>
                     <a href="#articles" class="link">ARTICELS</a>
-                    <a href="#subscribe" class="link">SUBSCRIBE</a>
+                    <a href="#subscribe" class="last-link">SUBSCRIBE</a>
                 </nav>
             </div>
         </div>

@@ -241,12 +241,16 @@ header {
     width: auto;
 }
 
-#about img {
-    height: 600px;
+.about-left-holder {
+    background-image: url(./images/about.jpg);
+    background-size: cover;
+    width: 50vw;
+    height: 100%;
 }
 
 .about-right-holder {
-    width: 400px;
+    width: 50vw;
+    height: 100%;
     height: auto;
     text-align: justify;
     position: center;
@@ -266,6 +270,7 @@ header {
 }
 
 .about-text-holder {
+    width: 40vw;
     margin-bottom: 60px;
     line-height: 20px;
 }
@@ -366,7 +371,7 @@ footer {
     padding-left: 60px;
 }
 
-#footer-last-link {
+footer .last-link {
     border: none;
     margin-left: 0px;
     border-radius: 10%;
@@ -399,7 +404,6 @@ footer {
 
 .toggle-sidebar {
     width: 100%;
-    background: #e1e6e0;
     color: #474c46;
     text-align: right;
     box-sizing: border-box;
@@ -408,10 +412,10 @@ footer {
 
 .toggle-sidebar button {
     font-size: 20px;
-    padding: 5px;
+    padding: 4px;
     border: none;
     background-color: #e1e6e0;
-    margin: 5px;
+    margin: 4px;
 }
 
 .sidebar {
@@ -457,7 +461,7 @@ footer {
         position: center;
         flex-direction: column;
         margin: 0 auto;
-        padding-top: 50px;
+        padding-top: 40px;
     }
     .subscribe {
         height: 360px;
@@ -474,13 +478,19 @@ footer {
     .toggle-sidebar {
         display: block;
     }
+    .toggle-background {
+        background: #e1e6e0;
+    }
     .sidebar {
-        height: 92%;
+        height: 92.8%;
     }
     .sidebar-open {
         width: 100%;
         display: block;
         background-color: #e1e6e0;
+    }
+    .remove-title {
+        display: none;
     }
     .header-top {
         display: none;
@@ -536,21 +546,34 @@ footer {
         height: auto;
         flex-direction: column;
     }
+    .about-left-holder {
+        height: 25vh;
+        width: 100%;
+    }
     .about-right-holder/* about bottom holder */
     {
-        width: 260px;
-        padding: 10px;
-        margin-top: 20px;
+        height: 50vh;
+        width: 100%;
+        padding-top: 20px;
     }
     .about-text-holder {
+        width: 80vw;
         height: auto;
-        height: 220px;
+    }
+    .border-2 {
+        margin-bottom: 10px;
     }
     .subscribe-form {
         height: 300px;
-        width: 300px;
-        padding: 10px;
+        width: 280px;
+        padding: 0;
         margin: 0;
+    }
+    .subscribe-form h1 {
+        min-width: 280px;
+    }
+    .subscribe-form h4 {
+        min-width: 280px;
     }
     .emailButton {
         margin: 10px;
@@ -568,7 +591,8 @@ footer {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        padding: 50px;
+        padding-top: 40px;
+        margin-bottom: 40px;
     }
     .footer-inner nav {
         display: flex;
@@ -577,5 +601,8 @@ footer {
     }
     .left-footer-inner {
         padding: 10px;
+    }
+    footer .last-link {
+        margin: 10px;
     }
 }
