@@ -1,6 +1,9 @@
+// import './utils.js';
+
 let isSidebarOpen = false;
 
 function onSidebarToggle() {
+
     const sidebarRef = document.getElementById("sidebar-container");
     const titleRef = document.getElementById("title-container")
     const toggleRef = document.getElementById("toggle-container")
